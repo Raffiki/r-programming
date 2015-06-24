@@ -14,6 +14,6 @@ rankhospital <- function(state, outcome, num = "best") {
   if (num == 'worst') num <- nrow(data)
   num <- as.numeric(num)
   data.sorted <- data[order(data[,cname], data[,'Hospital.Name']),]
-  
+
   data.sorted[num,'Hospital.Name']
 }
